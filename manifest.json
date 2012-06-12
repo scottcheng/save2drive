@@ -1,0 +1,26 @@
+{
+  "name": "__MSG_extName__",
+  "version": "0.0.6",
+  "description": "__MSG_extDesc__",
+  "permissions": [
+    "contextMenus",
+    "notifications",
+    "https://docs.google.com/viewer"
+  ],
+  "content_security_policy": "script-src 'self' https://ssl.google-analytics.com; object-src 'self'",
+  "background": {
+    "scripts": [
+      "lib/jquery.min.js",
+      "background.js"
+    ]
+  },
+  "default_locale": "en",
+  "icons": {
+    "48": "ui/logo_48.png"
+  },
+  "web_accessible_resources": [
+    "ui/logo_48.png",
+    "ui/logo2_48.png"
+  ],
+  "manifest_version": 2
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style type="text/css">
+#notifIcon {
+  float: left;
+  margin-right: 9px;
+  margin-bottom: 9px;
+  height: 48px;
+  width: 48px;
+  background-image: url(ui/logo_48.png);
+  background-repeat: no-repeat;
+}
+
+#textWrapper {
+  padding-top: 9px;
+}
+#notifMsg,
+#link2Drive {
+  font-family: Tahoma, Sans-Serif;
+  font-size: 12px;
+}
+#notifMsg {
+  color: #444;
+  font-weight: bold;
+}
+#link2Drive {
+  
+}
+    </style>
+  </head>
+  <body>
+    <div id="notifIcon"></div>
+    <div id="textWrapper">
+      <div id="notifMsg"></div>
+      <div><a id="link2Drive" href="https://drive.google.com/" target="_blank"></a></div>
+    </div>
+
+    <script type="text/javascript" src="lib/jquery.min.js"></script>
+    <script type="text/javascript" src="notif.js"></script>
+  </body>
+</html>
