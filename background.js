@@ -45,25 +45,25 @@ var saveToDrive = function(url, context) {
 
   var target = 'https://docs.google.com/viewer?a=sv&url=' + encodeURIComponent(url);
   $.get(target, function(data, textStatus, jqXHR) {
-    onSaveSuccess(context, data, textStatus, jqXHR);
+    onSaveSuccess(context);
   }, 'html').error(function(jqXHR, textStatus, errorThrown) {
-    onSaveError(context, jqXHR, textStatus, errorThrown);
+    onSaveError(context, target);
   });
 };
 
 var onSaveSuccess = function(context) {
   _gaq.push(['_trackEvent', 'Save', 'succeed', context]);
 
-  chrome.extension.getViews({type:"notification"}).forEach(function(notifWindow) {
+  chrome.extension.getViews({type: 'notification'}).forEach(function(notifWindow) {
     notifWindow.onSaveSuccess();
   });
 };
 
-var onSaveError = function(context, textStatus) {
-  _gaq.push(['_trackEvent', 'Save', 'fail', textStatus]);
+var onSaveError = function(context, target) {
+  _gaq.push(['_trackEvent', 'Save', 'fail', context]);
 
-  chrome.extension.getViews({type:"notification"}).forEach(function(notifWindow) {
-    notifWindow.onSaveError();
+  chrome.extension.getViews({type: 'notification'}).forEach(function(notifWindow) {
+    notifWindow.onSaveError(target);
   });
 };
 

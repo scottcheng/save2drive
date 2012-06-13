@@ -15,12 +15,18 @@ $link.click(function() {
 });
 
 var onSaveSuccess = function() {
-  $link.html(chrome.i18n.getMessage('notifLinkText'));
+  $link
+    .html(chrome.i18n.getMessage('notifLink'))
+    .attr('href', 'https://drive.google.com/');
   $msg.html(chrome.i18n.getMessage('notifSuc' + capitalise(context)));
   startTimeout();
 };
 
-var onSaveError = function() {
+var onSaveError = function(target) {
+  $link
+    .html(chrome.i18n.getMessage('notifLinkError'))
+    .attr('href', target)
+    .addClass('error');
   $('#notifIcon').addClass('error');
   $msg.html(chrome.i18n.getMessage('notifErr' + capitalise(context)));
   startTimeout();
@@ -29,5 +35,5 @@ var onSaveError = function() {
 var startTimeout = function() {
   window.setTimeout(function() {
     window.close();
-  }, 3000);
+  }, 5000);
 };

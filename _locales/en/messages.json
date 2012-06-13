@@ -76,8 +76,12 @@
     "description": "Text to display on the desktop notification on failing to saving a video"
   },
 
-  "notifLinkText": {
+  "notifLink": {
     "message": "Visit Google Drive",
     "description": "Text to display on the notification body"
+  },
+  "notifLinkError": {
+    "message": "Try again",
+    "description": "Text to display on the notification body when error occurs"
   }
 }
