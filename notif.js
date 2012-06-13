@@ -8,7 +8,6 @@ var $msg = $('#notifMsg');
 var $link = $('#link2Drive');
 
 $msg.html(chrome.i18n.getMessage('notifSaving' + capitalise(context)));
-$link.html(chrome.i18n.getMessage('notifLinkText'));
 
 $link.click(function() {
   chrome.extension.getBackgroundPage().onVisitDrive();
@@ -16,11 +15,13 @@ $link.click(function() {
 });
 
 var onSaveSuccess = function() {
+  $link.html(chrome.i18n.getMessage('notifLinkText'));
   $msg.html(chrome.i18n.getMessage('notifSuc' + capitalise(context)));
   startTimeout();
 };
 
 var onSaveError = function() {
+  $('#notifIcon').addClass('error');
   $msg.html(chrome.i18n.getMessage('notifErr' + capitalise(context)));
   startTimeout();
 };

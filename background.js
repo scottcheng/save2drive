@@ -52,18 +52,18 @@ var saveToDrive = function(url, context) {
 };
 
 var onSaveSuccess = function(context) {
-  _gaq.push(['_trackEvent', 'Save', 'succeed']);
+  _gaq.push(['_trackEvent', 'Save', 'succeed', context]);
 
-  chrome.extension.getViews({type:"notification"}).forEach(function(win) {
-    win.onSaveSuccess();
+  chrome.extension.getViews({type:"notification"}).forEach(function(notifWindow) {
+    notifWindow.onSaveSuccess();
   });
 };
 
 var onSaveError = function(context, textStatus) {
   _gaq.push(['_trackEvent', 'Save', 'fail', textStatus]);
 
-  chrome.extension.getViews({type:"notification"}).forEach(function(win) {
-    win.onSaveError();
+  chrome.extension.getViews({type:"notification"}).forEach(function(notifWindow) {
+    notifWindow.onSaveError();
   });
 };
 

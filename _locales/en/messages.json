@@ -4,75 +4,75 @@
     "description": "Extension name"
   },
   "extDesc": {
-    "message": "",
+    "message": "Save link, image, audio and video to Google Drive™",
     "description": "Extension description"
   },
 
   "menuItemTextLink": {
-  	"message": "Save link to Drive",
+  	"message": "Save link to Google Drive",
   	"description": "Text to display on the context menu item of a link"
   },
   "menuItemTextImage": {
-    "message": "Save image to Drive",
+    "message": "Save image to Google Drive",
     "description": "Text to display on the context menu item of an image"
   },
   "menuItemTextAudio": {
-    "message": "Save audio to Drive",
+    "message": "Save audio to Google Drive",
     "description": "Text to display on the context menu item of an audio"
   },
   "menuItemTextVideo": {
-    "message": "Save video to Drive",
+    "message": "Save video to Google Drive",
     "description": "Text to display on the context menu item of a video"
   },
 
   "notifSavingLink": {
-    "message": "Saving link to Drive...",
+    "message": "Saving link to Google Drive...",
     "description": "Text to display on the desktop notification when saving a link"
   },
   "notifSavingImage": {
-    "message": "Saving image to Drive...",
+    "message": "Saving image to Google Drive...",
     "description": "Text to display on the desktop notification when saving an image"
   },
   "notifSavingAudio": {
-    "message": "Saving audio to Drive...",
+    "message": "Saving audio to Google Drive...",
     "description": "Text to display on the desktop notification when saving an audio"
   },
   "notifSavingVideo": {
-    "message": "Saving video to Drive...",
+    "message": "Saving video to Google Drive...",
     "description": "Text to display on the desktop notification when saving a video"
   },
 
   "notifSucLink": {
-    "message": "Link saved to Drive",
+    "message": "Link saved to Google Drive",
     "description": "Text to display on the desktop notification on successfully saving a link"
   },
   "notifSucImage": {
-    "message": "Image saved to Drive",
+    "message": "Image saved to Google Drive",
     "description": "Text to display on the desktop notification on successfully saving an image"
   },
   "notifSucAudio": {
-    "message": "Audio saved to Drive",
+    "message": "Audio saved to Google Drive",
     "description": "Text to display on the desktop notification on successfully saving an audio"
   },
   "notifSucVideo": {
-    "message": "Video saved to Drive",
+    "message": "Video saved to Google Drive",
     "description": "Text to display on the desktop notification on successfully saving a video"
   },
 
   "notifErrLink": {
-    "message": "Failed to save link to Drive",
+    "message": "Failed to save link to Google Drive",
     "description": "Text to display on the desktop notification on failing to saving a link"
   },
   "notifErrImage": {
-    "message": "Failed to save image to Drive",
+    "message": "Failed to save image to Google Drive",
     "description": "Text to display on the desktop notification on failing to saving an image"
   },
   "notifErrAudio": {
-    "message": "Failed to save audio to Drive",
+    "message": "Failed to save audio to Google Drive",
     "description": "Text to display on the desktop notification on failing to saving an audio"
   },
   "notifErrVideo": {
-    "message": "Failed to save video to Drive",
+    "message": "Failed to save video to Google Drive",
     "description": "Text to display on the desktop notification on failing to saving a video"
   },
 

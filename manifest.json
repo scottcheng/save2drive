@@ -1,6 +1,6 @@
 {
   "name": "__MSG_extName__",
-  "version": "0.0.6",
+  "version": "1.0.1",
   "description": "__MSG_extDesc__",
   "permissions": [
     "contextMenus",
@@ -16,11 +16,13 @@
   },
   "default_locale": "en",
   "icons": {
-    "48": "ui/logo_48.png"
+    "16": "ui/logo_16.png",
+    "48": "ui/logo_48.png",
+    "128": "ui/logo_128.png"
   },
   "web_accessible_resources": [
     "ui/logo_48.png",
-    "ui/logo2_48.png"
+    "ui/logo_48_red.png"
   ],
   "manifest_version": 2
 }
