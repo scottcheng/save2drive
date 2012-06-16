@@ -19,7 +19,8 @@ var capitalise = function(s) {
 // Add context menu
 (function(){
   var contexts = ['link', 'image', 'audio', 'video'];
-  for (var i in contexts) {
+  var len = contexts.length;
+  for (var i = 0; i < len; i++) {
     (function() {
       var context = contexts[i];
       chrome.contextMenus.create({
@@ -78,6 +79,6 @@ var showNotif = (function() {
   };
 })();
 
-var onVisitDrive = function() {
-  _gaq.push(['_trackEvent', 'Notification', 'visitDrive']);
+var onVisitDrive = function(label) {
+  _gaq.push(['_trackEvent', 'Notification', 'visitDrive', label]);
 };

@@ -1,11 +1,11 @@
 {
   "name": "__MSG_extName__",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "__MSG_extDesc__",
   "permissions": [
     "contextMenus",
     "notifications",
-    "https://docs.google.com/viewer"
+    "*://docs.google.com/"
   ],
   "content_security_policy": "script-src 'self' https://ssl.google-analytics.com; object-src 'self'",
   "background": {

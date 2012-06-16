@@ -10,7 +10,8 @@ var $link = $('#link2Drive');
 $msg.html(chrome.i18n.getMessage('notifSaving' + capitalise(context)));
 
 $link.click(function() {
-  chrome.extension.getBackgroundPage().onVisitDrive();
+  var label = $link.hasClass('error') ? 'error' : 'success';
+  chrome.extension.getBackgroundPage().onVisitDrive(label);
   window.close();
 });
 
