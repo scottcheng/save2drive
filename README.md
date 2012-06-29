@@ -5,7 +5,7 @@ A Chrome extension to let you save link, image, audio and video to Google Driveâ
 
 See in [Chrome Web Store](https://chrome.google.com/webstore/detail/deoibeabfchdpckcmamaadeccohilbkp)
 
-Released under the [MIT license](http://www.opensource.org/licenses/MIT).
+Released under the MIT license.
 
 
 - - - - -
