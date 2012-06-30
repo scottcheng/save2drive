@@ -1,9 +1,7 @@
 Save2Drive
 ====
 
-A Chrome extension to let you save link, image, audio and video to Google Drive™
-
-See in [Chrome Web Store](https://chrome.google.com/webstore/detail/deoibeabfchdpckcmamaadeccohilbkp)
+Save2Drive is a Chrome extension to let you save link, image, audio and video to Google Drive™. See in [Chrome Web Store](https://chrome.google.com/webstore/detail/deoibeabfchdpckcmamaadeccohilbkp).
 
 Released under the MIT license.
 
