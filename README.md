@@ -20,9 +20,3 @@ A: No, but most of them. Save2Drive only works with publicly accessible resource
 
 Q: Why not support multiple Google accounts?  
 A: To the best of my knowledge, multiple account feature can only be supported through the Google Drive API, which does not currently support creating a file from a link. So basically this feature is not possible for the time being.
-
-
-Privacy
-----
-
-Save2Drive needs access to "your data on docs.google.com" *only* to save stuffs to your Google Drive. Save2Drive does *not* read or write your private data in any way.
